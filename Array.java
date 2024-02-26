@@ -11,9 +11,9 @@ public class Array {
         int[] arr = new int[n];
         System.out.print("Enter the array elements: ");
         
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < n; i++) {
             arr[i] = input.nextInt();
-        } System.out.println();
+        }
         
         System.out.print("You entered follwing elements: ");
         for (int i : arr) {
