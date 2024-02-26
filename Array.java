@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Array {
@@ -20,6 +21,22 @@ public class Array {
             System.out.print(i + " ");
         } System.out.println();
 
+        //sorting
+        Arrays.sort(arr);
+
+        System.out.print("Sorted elements: ");
+        for (int i : arr) {
+            System.out.print(i + " ");
+        } System.out.println();
+
+        //array searching
+        int ele = 3; 
+        System.out.print("Find the index of folling element" + ele);
+
+        int index = Arrays.binarySearch(arr, ele);
+        System.out.println("Index of following element is: " + index); 
+
         input.close();
     }
+
 }
