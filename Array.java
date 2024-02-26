@@ -1,10 +1,20 @@
-import java.util.Arrays;
-import java.util.Scanner;
+class ArrayMethods {
+    public static int findEle(int arr1[], int ele, int n) {
+
+        for (int i = 0; i < n; i++) {
+            if (arr1[i] == ele) {
+                return i;
+            }
+        }
+        return -1;
+    }
+}
 
 public class Array {
+
     public static void main(String[] args) {
         
-        Scanner input = new Scanner(System.in);
+/*         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter the size of array: " );
         int n = input.nextInt();
@@ -53,8 +63,21 @@ public class Array {
             for (int j = 0; j < col; j++) {
                 System.out.print(arr2[i][j] + "  ");
             } System.out.println();
-        }System.out.println();
+        }System.out.println(); 
 
-        input.close();
+        input.close(); */
+        
+        int arr1[] = {1,2,3,4,5};
+        int n = arr1.length;
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr1[i] + " ");
+        } System.out.println();
+
+        int ele = 3;
+        System.out.println("Find element: " + ele);
+    
+        int idx = ArrayMethods.findEle(arr1, ele, n);
+
+        System.out.println("Element present at index: " + idx);
     }
 }
