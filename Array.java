@@ -34,9 +34,27 @@ public class Array {
         System.out.print("Find the index of folling element" + ele);
 
         int index = Arrays.binarySearch(arr, ele);
-        System.out.println("Index of following element is: " + index); 
+
+        //2D Array
+        System.out.println("Index of following element is: " + index);  
+        System.out.println("Enter row and coln for 2D array: ");
+        int row = input.nextInt();
+        int col = input.nextInt();
+
+        int arr2[][] = new int[row][col];
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                arr2[i][j] = input.nextInt();
+            }
+        }
+
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                System.out.print(arr2[i][j] + "  ");
+            } System.out.println();
+        }System.out.println();
 
         input.close();
     }
-
 }
