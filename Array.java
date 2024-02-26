@@ -1,11 +1,25 @@
+import java.util.Scanner;
+
 public class Array {
     public static void main(String[] args) {
         
-        int arr[] = {1,2,3,4,5,6,7,8,9,10};
+        Scanner input = new Scanner(System.in);
 
+        System.out.print("Enter the size of array: " );
+        int n = input.nextInt();
+        //int arr[] = {1,2,3,4,5,6,7,8,9,10};
+        int[] arr = new int[n];
+        System.out.print("Enter the array elements: ");
+        
         for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+            arr[i] = input.nextInt();
+        } System.out.println();
+        
+        System.out.print("You entered follwing elements: ");
+        for (int i : arr) {
+            System.out.print(i + " ");
         } System.out.println();
 
+        input.close();
     }
 }
