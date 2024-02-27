@@ -1,10 +1,19 @@
 class A {
+
+    A () {
+
+    }
+
     public void show() {
         System.out.println("Hello A");
     }
 }
 
 public class SuperKeyWord extends A{
+
+    SuperKeyWord () {
+        super();
+    }
     
     public void show() {
         super.show();
