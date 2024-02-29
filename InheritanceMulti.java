@@ -1,19 +1,13 @@
 interface A {
-    void a();
+    void method();
 }
 interface B {
-    void b();
+    void method();
 }
 public class InheritanceMulti implements A,B {
 
-    @Override
-    public void a() {
-        System.out.println("A class");
-    }
-
-    @Override
-    public void b() {
-        System.out.println("B class");
+    public void method() {
+        System.out.println("A  & B class");
     }
 
     void mainMethod() {
@@ -21,8 +15,8 @@ public class InheritanceMulti implements A,B {
     }
     public static void main(String[] args) {
         InheritanceMulti in = new InheritanceMulti();
-        in.a();
-        in.b();
+        in.method();
+        in.method();
         in.mainMethod();
     }    
 }
