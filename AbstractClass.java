@@ -7,6 +7,10 @@ abstract class Animal {
     abstract void eat();
     abstract void sound();
 
+    static void color() {
+        System.out.println("Color is red");
+    }
+
 }
 
 class Cow extends Animal {
@@ -49,5 +53,8 @@ public class AbstractClass {
         d.legs("Dog");
         d.eat();
         d.sound();
+        System.out.println();
+
+        Animal.color();
     }
 }
