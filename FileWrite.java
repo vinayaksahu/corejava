@@ -7,7 +7,11 @@ public class FileWrite {
             File f = new File("C:\\Users\\vinayak\\Desktop\\vinayak.txt");
             try(FileWriter fw = new FileWriter(f)) {
                 fw.write("Hello my name is Vinay.");
-            }/*  finally {
+            } catch(Exception e) {
+                System.out.println(e);
+            }
+            
+            /*  finally {
                 fw.close();
             } */
       /*   } catch (Exception e) {
