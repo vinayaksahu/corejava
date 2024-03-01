@@ -10,8 +10,14 @@ public class ExceptionTryCatch {
         System.out.print("\nEnter divisor number: ");
         int b = input.nextInt();
 
-        int c = a / b;
-        System.out.print("\nQuotient " + c);
+        try {
+            int c = a / b;
+            System.out.println("\nQuotient " + c);
+        } catch (Exception e) {
+            System.out.println(e + " not possible");
+        }
+        
+        
         
         input.close();
     }
