@@ -13,11 +13,12 @@ public class ExceptionTryCatch {
         try {
             int c = a / b;
             System.out.println("\nQuotient " + c);
-        } catch (Exception e) {
+        } //catch (Exception e) {
+        catch (ArithmeticException e) {
             System.out.println(e + " not possible");
         }
         
-        
+        System.out.println("Main method ended");
         
         input.close();
     }
