@@ -37,8 +37,8 @@ import java.io.IOException;
 
 public class FileRead {
     public static void main(String[] args) throws IOException {
-        String filePath = "C:\\Users\\vinayak\\Desktop\\vinayak.txt";
-        File f = new File(filePath);
+        //String filePath = "C:\\Users\\vinayak\\Desktop\\vinayak.txt";
+        File f = new File("C:\\Users\\vinayak\\Desktop\\vinayak.txt");
 
         if (!f.exists()) {
             System.out.println("File does not exist.");
