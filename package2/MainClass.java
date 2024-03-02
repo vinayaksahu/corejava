@@ -4,15 +4,16 @@ import package1.A;
 class MainClass2 extends A {
  
     public void show1() {
-        System.out.println("This is mainClas2 of package2 extends class A");
+        System.out.println("This is mainClas2 of package2 extends class A " + data);
+        show();
     }
 }
 
 public class MainClass {
     public static void main(String[] args) {
         
-        A obj = new A();
+        MainClass2 obj = new MainClass2();
 
-        obj.show();
+        obj.show1();
     }
 }
