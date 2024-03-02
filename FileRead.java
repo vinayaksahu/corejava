@@ -37,7 +37,7 @@ import java.io.IOException;
 
 public class FileRead {
     public static void main(String[] args) throws IOException {
-        //String filePath = "C:\\Users\\vinayak\\Desktop\\vinayak.txt";
+        //String pathname = "C:\\Users\\vinayak\\Desktop\\vinayak.txt";
         File f = new File("C:\\Users\\vinayak\\Desktop\\vinayak.txt");
 
         if (!f.exists()) {
